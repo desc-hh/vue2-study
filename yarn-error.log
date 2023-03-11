@@ -1,0 +1,50 @@
+Arguments: 
+  /Users/xiaobuding/.nvm/versions/node/v16.18.1/bin/node /Users/xiaobuding/.nvm/versions/node/v16.18.1/lib/node_modules/yarn/bin/yarn.js dev
+
+PATH: 
+  /Users/xiaobuding/.nvm/versions/node/v16.18.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/xiaobuding/.nvm/versions/node/v16.18.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/xiaobuding/Library/Application Support/JetBrains/Toolbox/scripts:/Users/xiaobuding/Library/Application Support/JetBrains/Toolbox/scripts
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.18.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/xiaobuding/Desktop/rollup/package.json: Unexpected token / in JSON at position 24
+      at JSON.parse (<anonymous>)
+      at /Users/xiaobuding/.nvm/versions/node/v16.18.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/xiaobuding/.nvm/versions/node/v16.18.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/xiaobuding/.nvm/versions/node/v16.18.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "rollup",   /* rollup -c 执行配置文件 -w热更新 */
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "rollup -c -w"
+    },
+  
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.21.0",
+      "@babel/preset-env": "^7.20.2",
+      "rollup": "^2.79.1",
+      "rollup-plugin-babel": "^4.4.0",
+      "rollup-plugin-serve": "^2.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
