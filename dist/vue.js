@@ -4,14 +4,20 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Vue = factory());
 })(this, (function () { 'use strict';
 
-    function Vue(){
+    function initMixin(Vue){
+        Vue.prototype._init=function(options){
+            console.log('%cindex.js line:7 options', 'color: #007acc;', options);
+        };
+    }
+
+    function Vue(options){
+        //初始化
+        this._init(options);
 
     }
-    var index = {
-        Vue
-    };
+    initMixin(Vue);
 
-    return index;
+    return Vue;
 
 }));
 //# sourceMappingURL=vue.js.map

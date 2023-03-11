@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "rollup -c -w"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
